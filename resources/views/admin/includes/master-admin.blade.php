@@ -82,52 +82,6 @@
                with font-awesome or any other icon font library -->
           <li class="nav-item">
             <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-shopping-bag"></i>
-              <p>
-                Quản lý sản phẩm
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{!! url('admin/add-product') !!}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Thêm sản phẩm</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{!! url('admin/list-product') !!}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Danh sách sản phẩm</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-bars"></i>
-              <p>
-                Quản lý danh mục
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="{!! url('admin/add-category') !!}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Thêm danh mục</p>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="{!! url('admin/list-category') !!}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Danh sách danh mục</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-video"></i>
               <p>
                 Quản lý Video

@@ -23,7 +23,9 @@
                 {{csrf_field()}}
                 <tr>
                   <td>{{ $vid->name }}</td>
-                  <td>{{ $vid->image }}</td>
+                  <td>
+                    <img src="{{URL::to('/upload/'.$vid->image)}}" style="max-height: 150px; max-width: 278px;" alt="No Banner Photo">
+                  </td>
                   <td>{{ $vid->embed }}</td>
                   <td>{{ $vid->description }}</td>
                   <td>{{ $vid->status }}</td>

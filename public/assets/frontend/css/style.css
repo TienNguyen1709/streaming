@@ -79,12 +79,11 @@ nav ul li a:hover {
 }
 
 .post {
-    display: flex;
+    display: grid;
 }
 
 .post-content {
-    display: flex;
-    align-items: center;
+    padding-top: 10px;
 }
 
 .description {
@@ -96,6 +95,11 @@ nav ul li a:hover {
 
 .title-video {
     width: 500px;
+}
+
+.video {
+    width: 430px;
+    height: 300px;
 }
 
 .btn-post {
@@ -205,9 +209,11 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 12px;
-    position: fixed;
+    position: absolute;
+    right: 0;
     bottom: 0;
+    left: 0;
+    padding: 1rem;
 }
 
 footer p {
@@ -215,23 +221,95 @@ footer p {
     font-size: 15px;
 }
 
-.btn-ft {
-    background-color: #ffa800;
-    border-radius: 3px;
-}
-
-footer form p {
-    color: #ffa800;
-    font-size: 13px;
-    margin-bottom: 3px;
-    margin-left: 270px;
-}
-
-footer input {
-    padding: 8px 12px;
-    border: 2px solid #ffa800;
-    border-radius: 3px;
-    outline: none;
-    font-size: 13px;
-    margin-left: 270px;
+@media (max-width: 430px) {
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .menu {
+        left: 0;
+    }
+    .product h3 {
+        text-align: center;
+        padding: 20px 0;
+    }
+    .product-list {
+        display: grid;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+    .product-item {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .product-item img {
+        width: 100%;
+        cursor: pointer;
+        transition: 0.4s;
+        margin-bottom: -4px;
+    }
+    .product-item img:hover {
+        transform: none;
+    }
+    .product-item:hover .product-detail {
+        transform: translateY(0);
+    }
+    .product-detail {
+        text-align: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #000;
+        opacity: 0.5;
+    }
+    .product-detail h4 {
+        margin: 16px;
+        font-size: 16px;
+        color: #fff;
+    }
+    .post {
+        display: grid;
+    }
+    .post-content {
+        padding-top: 10px;
+    }
+    .description {
+        font-size: 16px;
+        margin-left: 10px;
+        line-height: 1.6;
+        width: 410px;
+    }
+    .title-video {
+        font-size: 20px;
+        margin-left: 10px;
+        width: 410px;
+    }
+    .video {
+        width: 410px;
+        height: 280px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    footer {
+        height: 60px;
+        background-color: #021a34;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+    }
+    footer p {
+        color: #fff;
+        font-size: 13px;
+    }
 }

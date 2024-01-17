@@ -10,7 +10,7 @@
                 <!-- <button class="btn-post btn">More ...</button> -->
             </div>
         </div>
-        <iframe height="300px" width="480px" src="{{ $detail->embed }}" allowfullscreen></iframe>
+        <iframe class="video" src="{{ $detail->embed }}" allowfullscreen></iframe>
     </div>
     @endforeach 
 </section>

@@ -9,9 +9,6 @@
         <link rel="stylesheet" href="{{asset('assets/frontend/css/style.css')}}">
     </head>
     <body>
-        <div class="banner left-banner">
-            <img src="{{asset('assets/frontend/img/vbannerleft.jpg')}}">
-        </div>
         <div class="container">
 
  <!----------------------------------- Header ------------------------------------------------------->           
@@ -22,12 +19,7 @@
             <nav>
                 <div class="menu">              
                 <ul>
-                    <li><a class="active" href="">Trang chủ</a></li>
-                    <li><a href="">Thực đơn</a></li>
-                    <li><a href="">Thế giới ẩm thực</a></li>
-                    <li><a href="">Khuyến mãi - Combo</a></li>
-                    <li><a href="">Tuyển dụng</a></li>
-                    <li><a class="fa fa-shopping-bag" href="" ></a><li>
+                    <li><a href="{{ URL::to('/') }}">Trang chủ</a></li>
                     <li class="socials">
                         <a href="https://www.facebook.com/" target="_blank" class="fab fa-facebook-f"></a>
                         <a href="https://www.instagram.com/" target="_blank" class="fab fa-instagram"></a>
@@ -47,19 +39,8 @@
                 Phạm Quang Tiến - MSSV: 20221121P <br>
                 Nguyễn Minh Tiến - MSSV: 20221120P
                </p> 
-               <form>
-                <p>Subscribe để nhận ưu đãi mỗi ngày!
-                </p>
-                <input required pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" type="text" placeholder="Nhập email theo dõi ...">
-                <button class="btn btn-ft">Send</button>
-               </form>
             </footer>
         </div>
-
-        <div class="banner right-banner">
-            <img src="{{asset('assets/frontend/img/vbannerright.jpg')}}">
-        </div>
-        
         <script src="{{asset('assets/frontend/js/script.js')}}"></script>
     </body>
 </html>

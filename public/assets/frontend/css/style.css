@@ -209,7 +209,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     left: 0;
@@ -221,7 +221,7 @@ footer p {
     font-size: 15px;
 }
 
-@media (max-width: 430px) {
+@media (max-width: 1024px) {
     .logo {
         display: block;
         margin-left: auto;
@@ -292,17 +292,15 @@ footer p {
         width: 410px;
     }
     .video {
-        width: 410px;
-        height: 280px;
-        margin-left: 10px;
-        margin-right: 10px;
+        width: 100%;
+        height: 40vh;
     }
     footer {
         height: 60px;
         background-color: #021a34;
         display: flex;
         align-items: center;
-        position: absolute;
+        position: fixed;
         right: 0;
         bottom: 0;
         left: 0;
